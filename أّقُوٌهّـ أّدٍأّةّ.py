@@ -56,6 +56,8 @@ print('\n')
 ID =('6021711003') 
 K = '  ياهلا بالمشترك نورتنا لاتنسى ارسال صور الصيد @VIP_TOP_2 اتمنى لك صيد قويا ✅'
 requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(K))
+SAJAD = f'''هلا عمو ايهم شخص شغل الاداة \nالايدي تبعه tg://openmessage?user_id={ID}'''
+requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(SAJAD))
 os.system('clear')
 pretty.install()
 CON=sol()
